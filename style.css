@@ -1,0 +1,28 @@
+.topicButton{
+    margin: 0 10px 10px 0;
+    min-width: 100px;
+}
+.row{
+    margin-top: 15px;
+}
+
+.imgRes{
+    width: auto;
+    height: 80%;
+    display:block;
+    position: relative;
+    bottom: 0;
+}
+
+.gifCont{
+    border: solid 1px grey;
+    padding: 5px;
+    width: auto;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+}
+.imageRating{
+    margin: 0px;
+
+}
