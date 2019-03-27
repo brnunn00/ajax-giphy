@@ -8,21 +8,47 @@
 
 .imgRes{
     width: auto;
-    height: 80%;
+    max-width: 32vw;
+    height: 90%;
     display:block;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
 }
 
 .gifCont{
-    border: solid 1px grey;
+    /* border: solid 1px grey; */
     padding: 5px;
     width: auto;
+    /* max-width:  */
     height: 300px;
     display: inline-block;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .imageRating{
     margin: 0px;
 
+}
+
+#addTxt{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+#addCont{
+    padding: 10px;
+    background: slategray;
+}
+
+.container-fluid{
+padding-left: 50px !important;
+padding-right: 50px !important;
+
+}
+
+.form-cont{
+    position: fixed;
+
+}
+.image-cont{
+    position: relative;
 }
