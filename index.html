@@ -1,28 +1,48 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Reaction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reaction GIFS!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </head>
 
 <body>
-    <div class="container butCont">
-        <div class="row">
-            <div class="col-12">
+        <div class="container-fluid">
+                <div class="row justify-content-center headerRow">
+                    <div class="col-12">
+                        <h1 id="mainLine">Reaction GIFs for Everyday Life </h1>
+                    </div>
+                </div>
+        </div>
+    <div class="container-fluid butCont">
+      
+        <div class="row ">
+            <div class="col-12 col-md-9">
+                <div id="clickPrompt">
+                   <h4> Click a button to add some GIFS!</h4>
+                               </div>
                 <div class="button-stack">
-
+            
                 </div>
 
 
+            </div>
+        
+
+        <div class="col-12 col-md-3 form-cont">
+                <div id="addCont">
+                        <span id="buttonAddPrompt">Add a GIF generating button <input class="rounded" id="addTxt" type="text"><input
+                                id="addButton" value="Add!" type="submit"></span>
+                  
+                        </div>
             </div>
         </div>
     </div>
@@ -32,13 +52,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 form-cont">
-                <div id="addCont">
-                        <span>Add a button! <input class="rounded" id="addTxt" type="text"><input
-                                id="addButton" value="Submit" type="submit"></span>
-                  
-                        </div>
-            </div>
+            
 
         </div>
     </div>

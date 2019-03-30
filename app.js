@@ -13,7 +13,7 @@ $(document).ready(function () {
                 // console.log(mainObj.searchArray);
 
                 let ele = $('<button>');
-                ele.addClass('topicButton');
+                ele.addClass('topicButton rounded');
                 ele.val(element);
                 ele.attr('clickCount', 0);
                 ele.text(element)
@@ -82,11 +82,17 @@ $(document).ready(function () {
             if (mainObj.searchArray.indexOf(newVal) > -1){
                 alert("Seems that button exists already. Give it a push!");
                 $("#addTxt").val('');
+            } else if (newVal ==''){
+
+                alert("Add a value to search!");
             } else {
                 mainObj.searchArray.push(newVal);
-                let newB = $("<button>").addClass("topicButton").val(newVal).attr("clickCount", 0).text(newVal);
-                newB.appendTo('.button-stack');
+                $('.button-stack').empty();
                 $("#addTxt").val('');
+                mainObj.genButtons();
+                // let newB = $("<button>").addClass("topicButton").val(newVal).attr("clickCount", 0).text(newVal);
+                // newB.appendTo('.button-stack');
+                // $("#addTxt").val('');
 
             }
 

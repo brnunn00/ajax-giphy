@@ -1,6 +1,9 @@
 .topicButton{
     margin: 0 10px 10px 0;
     min-width: 100px;
+    background: slategray;
+    color: white;
+    font-weight: bold;
 }
 .row{
     margin-top: 15px;
@@ -39,7 +42,7 @@
     background: slategray;
 }
 
-.container-fluid{
+.container-fluid.butCont{
 padding-left: 50px !important;
 padding-right: 50px !important;
 
@@ -51,4 +54,27 @@ padding-right: 50px !important;
 }
 .image-cont{
     position: relative;
+}
+
+#buttonAddPrompt{
+
+color: white;
+font-size: larger;
+font-weight: bold;
+}
+
+#clickPrompt{
+    
+}
+
+#mainLine{
+text-align: center;
+color: navy;
+margin-bottom: 15px;
+}
+
+.headerRow{
+    background:silver;
+    margin: 0 !important;
+    padding: 0 !important;
 }
