@@ -117,8 +117,12 @@ $(document).ready(function () {
         setFavs: function(){
             let ele = $(this);
             let id = ele.data("id");
+            if (mainObj.favArr.length ==0){
+             mainObj.favArr.push(id);
+            } else {
             if (mainObj.favArr.indexOf(id) == -1)
             mainObj.favArr.push(id);
+            }
            
             localStorage.setItem("favArr", JSON.stringify(mainObj.favArr));
             mainObj.buildFavs();
