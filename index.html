@@ -1,60 +1,72 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Reaction GIFS!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reaction GIFS!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="app.js"></script>
-    </head>
+    <script src="app.js"></script>
+</head>
 
 <body>
-        <div class="container-fluid">
-                <div class="row justify-content-center headerRow">
-                    <div class="col-12">
-                        <h1 id="mainLine">Reaction GIFs for Everyday Life </h1> 
-                    </div>
-                </div>
-        </div>
-    <div class="container-fluid butCont">
-      
-        <div class="row ">
-            <div class="col-12 col-md-9">
-                <div id="clickPrompt">
-                   <h4> Click a button to add some GIFS!</h4>
-                               </div>
-                <div class="button-stack">
-            
-                </div>
-
-
-            </div>
-        
-
-        <div class="col-12 col-md-3 form-cont">
-                <div id="addCont">
-                        <span id="buttonAddPrompt">Add a GIF generating button <input class="rounded" id="addTxt" type="text"><input
-                                id="addButton" value="Add!" type="submit"></span>
-                  
-                        </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center headerRow">
+            <div class="col-12">
+                <h1 id="mainLine">Reaction GIFs for Everyday Life </h1>
             </div>
         </div>
     </div>
-    <div class="container-fluid mainBod">
+    <div class="container-fluid butCont">
+
+        <div class="row ">
+            <div class="col-12 col-md-9">
+                <div id="clickPrompt">
+                    <h4> Click a button to add some GIFS!</h4>
+                </div>
+                <div class="button-stack">
+
+                </div>
+
+
+            </div>
+
+
+            <div class="col-12 col-md-3 form-cont ">
+                <div id="addCont">
+                    <span id="buttonAddPrompt">Add a GIF generating button <input class="rounded" id="addTxt"
+                            type="text"><input id="addButton" value="Add!" type="submit"></span>
+
+                </div>
+                
+                <!-- <div id="addCont">
+                    <span id="buttonAddPrompt">Set a filter </span>
+                    NEVER MIND API doesnt allow for multiple selections for rating<div class="ratingCont">
+                        <button class="filterChoice selected" value="g" data-selected=true>G</button>
+                        <button class="filterChoice" value="pg" data-selected=false>PG</button>
+                        <button class="filterChoice" value="pg-13" data-selected=false>PG-13</button>
+                        <button class="filterChoice" value="r" data-selected=false>R</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container mainBod">
         <div class="row">
             <div class="col-12 col-md-9 image-cont" id="topImageCont">
 
             </div>
 
-            
+            <div class="col-12 col-md-3 " >
+            <h2 id="favTag"> Favorites!</h2>
+            <div id="favCont">
+            </div>
+            </div>
 
         </div>
     </div>

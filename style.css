@@ -12,7 +12,7 @@
 .imgRes{
     width: auto;
     max-width: 32vw;
-    height: 90%;
+    height: 80%;
     display:block;
     /* position: relative; */
     bottom: 0;
@@ -25,10 +25,10 @@
     /* max-width:  */
     height: 300px;
     display: inline-block;
-    /* margin: 10px; */
+    margin-top: 10px;
 }
 .imageRating{
-    margin: 0px;
+    margin: 0;
 
 }
 
@@ -78,3 +78,48 @@ margin-bottom: 15px;
     margin: 0 !important;
     padding: 0 !important;
 }
+
+.filter-choice{
+    width: 50px;
+}
+
+.ratingCont{
+    display: block;
+    align-content: space-between;
+    
+}
+
+.filterChoice.selected{
+border: 1px solid red;
+}
+
+.favIco{
+    display: block;
+    color: navy;
+    font-size: larger;
+}
+
+#favCont{
+    /* padding: 50px !important; */
+}
+#favTag{
+    display: none;
+    margin: 5px;
+    color: navy;
+    font-weight: bold;
+}
+.remFav{
+    /* margin: 5px; */
+    color: navy;
+    font-weight: bold;
+    /* display: inline-block; */
+}
+.favSrc{
+
+  display: inline-block;
+}
+.favSrcCont{
+    padding: 5px;
+    margin: 5px;
+}
+
