@@ -117,7 +117,8 @@ $(document).ready(function () {
         setFavs: function(){
             let ele = $(this);
             let id = ele.data("id");
-            if (mainObj.favArr.length ==0){
+            console.log(mainObj.favArr)
+            if (mainObj.favArr == null){
              mainObj.favArr.push(id);
             } else {
             if (mainObj.favArr.indexOf(id) == -1)
@@ -131,6 +132,7 @@ $(document).ready(function () {
             //I know some of this is duplicated code but I'm out of time/energy to refactor it in a way to be reusable for the initial x10 loop and adhoc here
             let local = localStorage.getItem("favArr");
                 let localFavs = JSON.parse(local);
+                if (localFavs==null)return;
                 mainObj.favArr = localFavs;
             $("#favCont").empty();
             if (localFavs != undefined){
